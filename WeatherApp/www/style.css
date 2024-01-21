@@ -1,0 +1,106 @@
+.weather-app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #e6858f 0%, #f2b8a2 99%, #f2b8a2 100%);
+
+    color: white;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    padding: 20px;
+    padding-top: 60px;
+}
+
+#weather-description {
+    font-size: 30px; 
+    color: black;
+    margin-top: 10px; 
+    text-align: center;
+}
+
+.search-bar-container {
+    position: fixed;
+    top: 0;
+    z-index: 1000; 
+    background: #fff; 
+    padding: 10px 0; /* Add some padding at the top and bottom */
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+#location-input {
+    padding: 10px;
+    width: 70%;
+    border: 2px solid #ddd;
+    margin-right: 10px;
+    border-radius: 20px; 
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: red;
+}
+
+#city-name {
+    margin: 20px 0;
+    font-size: 50px;
+    color: black;
+}
+
+.weather-icon-container {
+    margin: 20px 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+#weather-icon {
+    width: 140px;
+    height: 140px;
+}
+
+#temperature {
+    font-size: 50px;
+    margin: 20px 0;
+    color: black;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly around the items */
+    align-items: center; 
+    width: 100%;
+    margin-top: 20px; /* Space above the container */
+}
+
+.humidity-container, .wind-container {
+    display: flex;
+    flex-direction: column; /* Stacks the icon and text on top of each other */
+    align-items: center; 
+    justify-content: center; 
+}
+
+.humidity-container img, .wind-container img {
+    width: 50px; 
+    height: 50px; 
+    margin-bottom: 10px; /* Space between the icon and the text */
+}
+
+.details-container div {
+    text-align: center; 
+    font-size: 15px; 
+    margin: 5px 0; /* Spacing above and below the text */
+    color: black;
+}
